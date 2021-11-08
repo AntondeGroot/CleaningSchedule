@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+# fill in the tasks below
+# with each line a separate task
+# start each line with a number a comma and the task
+# weekly tasks are  :  1, "weekly task"
+# monthly tasks are :  4, "monthly task"
+
+1, Keuken: handdoeken vervangen
+1, Keuken: fornuis en aanrecht schoonmaken
+1, WC schoonmaken
+2, Stofzuigen: boven en onder, keuken en hal
+2, Trappen afdoen met natte doek
+4, Woonkamer: ramen lappen
+4, Badkamer: spiegel, bad, glaswand, vloer, afvoerput legen
+8, Koelkast & Vriezer schoonmaken
+8, Bestekla schoonmaken
