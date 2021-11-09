@@ -117,13 +117,17 @@ class ExcelFile():
         #  https://stackoverflow.com/questions/16683376/print-chosen-worksheets-in-excel-files-to-pdf-in-python
 
         import win32com.client
+        import os
 
         o = win32com.client.Dispatch("Excel.Application")
         o.Visible = False
-        wb_path = r'C:\Users\anton.degroot@cegeka-dsa.nl\.spyder-py3\CleaningSchedule\main\CleaningSchedule.xls'
+        filename = 'CleaningSchedule.xls'
+        xls = '.xls'
+        pdf = '.pdf'
+        wb_path = os.path.join(os.path.dirname(os.path.realpath (__file__)),filename,xls)
         wb = o.Workbooks.Open(wb_path)
         ws_index_list = [1] #say you want to print these sheets
-        path_to_pdf = r'C:\Users\anton.degroot@cegeka-dsa.nl\.spyder-py3\CleaningSchedule\main\Schedule.pdf'
+        path_to_pdf = os.path.join(os.path.dirname(os.path.realpath (__file__)),filename,pdf)
         wb.WorkSheets(ws_index_list).Select()
         wb.ActiveSheet.ExportAsFixedFormat(0, path_to_pdf)
         wb.Close(True)
